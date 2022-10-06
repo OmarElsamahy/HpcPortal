@@ -1,0 +1,17 @@
+#!/bin/bash
+variable1='Clu$ter#iri'
+sshpass -p $variable1 autossh admin@192.168.15.204 " echo $1 | ipa user-add $2 --first=$3 --last=$4 --email=$5 --password"
+#sshpass -p $1 autossh -t -o StrictHostKeyChecking=no $2@192.168.15.201 "echo $1 echo $1 echo $1 |ssh $2@192.168.15.201; exit"
+#sshpass -p $1 autossh -t -o StrictHostKeyChecking=no $2@192.168.15.201 "echo $1 echo $1 echo $1 |ssh $2@192.168.15.201; exit"
+echo $1 echo $1 echo $1 echo $1 | "ssh -t -t $2@192.168.15.201;exit;"
+#sshpass -p 'Clu$ter#iri' autossh -o StrictHostKeyChecking=no admin@192.168.15.204 "echo $1 echo $1 echo $1 | kinit $2"
+#echo $1 echo $1 echo $1 | sshpass -p $1 autossh -t -o StrictHostKeyChecking=no $2@192.168.15.201 ""
+#echo $1 echo $1 echo $1 | sshpass -p $1 autossh -o StrictHostKeyChecking=no $2@192.168.15.201 "ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa -m pem <<< y "
+#sshpass -p $1 autossh -o StrictHostKeyChecking=no $2@10.140.0.212 "ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa -m pem <<< y "
+#sshpass -p $1 autossh -o StrictHostKeyChecking=no $2@172.30.0.121 "ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa -m pem <<< y "
+#ip1key=(sshpass -p $1 autossh -o StrictHostKeyChecking=no $2@192.168.15.201 "cat /home/$2/.ssh/id_rsa.pub")
+#ip2key=(sshpass -p $1 autossh -o StrictHostKeyChecking=no $2@10.140.0.212 "cat /home/$2/.ssh/id_rsa.pub")
+#ip3key=(sshpass -p $1 autossh -o StrictHostKeyChecking=no $2@172.30.0.121 "cat /home/$2/.ssh/id_rsa.pub")
+#echo $ip1key
+#echo $ip3key
+#sshpass -p 'Clu$ter#iri' autossh admin@192.168.15.204 "echo 'Clu$ter#iri' | kinit admin ; ipa user-mod $2 --sshpubkey= $ip1key"
